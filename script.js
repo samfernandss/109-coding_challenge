@@ -57,9 +57,12 @@ const gameEvents = new Map([
 ]);
 
 const eventsSet = new Set([]);
+
 for (const [key, value] of gameEvents){
     eventsSet.add(value);
+    console.log(`[${key <= 45 ? 'FIRST HALF' : 'SECOND HALF'}] ${key}: ${value}`);
 }
+
 const events = [...eventsSet]
 console.log(events);
 
