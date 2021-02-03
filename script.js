@@ -56,6 +56,9 @@ const gameEvents = new Map([
     [92, 'Yellow card'],
 ]);
 
+//Como professor fez
+//const eventSet = [...new Set(gameEvents.values())];
+
 const eventsSet = new Set([]);
 
 for (const [key, value] of gameEvents){
